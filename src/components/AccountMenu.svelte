@@ -9,6 +9,10 @@
     };
   };
 
+  type CurrentUserResponse = {
+    user?: HaloUser;
+  };
+
   let user: HaloUser | null = null;
   let loading = true;
   let open = false;
@@ -27,7 +31,18 @@
         },
       );
 
-      user = response.ok ? ((await response.json()) as HaloUser) : null;
+      if (!response.ok) {
+        user = null;
+        return;
+      }
+
+      const payload = (await response.json()) as CurrentUserResponse;
+      const currentUser = payload.user;
+      user =
+        currentUser?.metadata?.name &&
+        currentUser.metadata.name !== "anonymousUser"
+          ? currentUser
+          : null;
     } catch {
       user = null;
     } finally {
@@ -109,6 +124,14 @@
           {displayName()}
         </div>
         <div class="my-1 border-t border-black/10 dark:border-white/10"></div>
+        <a
+          href="/uc/profile"
+          role="menuitem"
+          class="flex items-center gap-2 rounded-lg px-3 py-2 transition hover:bg-(--btn-plain-bg-hover) dark:hover:bg-white/10"
+        >
+          <span class="icon-[material-symbols--person-outline-rounded] text-lg"></span>
+          <span>个人中心</span>
+        </a>
         <a
           href="/console"
           role="menuitem"
