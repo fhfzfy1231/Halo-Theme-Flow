@@ -38,6 +38,7 @@
 
       const payload = (await response.json()) as CurrentUserResponse;
       const currentUser = payload.user;
+      // Halo returns the disabled anonymousUser with HTTP 200 for visitors.
       user =
         currentUser?.metadata?.name &&
         currentUser.metadata.name !== "anonymousUser"
