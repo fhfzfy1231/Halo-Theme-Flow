@@ -1,6 +1,8 @@
 ---
 import LightDarkSwitch from "./LightDarkSwitch.svelte";
 import Search from "./Search.svelte";
+
+import AccountMenu from "./AccountMenu.svelte";
 import SiteLogo from "./SiteLogo.astro";
 import DisplaySettings from "./widget/DisplaySettings.svelte";
 import LanguageSwitch from "./widget/LanguageSwitch.svelte";
@@ -159,7 +161,8 @@ const className = Astro.props.class;
     </div>
 
     <div class="flex items-center">
-      <Search client:only="svelte" />
+			<Search client:only="svelte" />
+			<AccountMenu client:only="svelte" />
       <!-- 语言切换按钮：位于显示设置按钮左边。后台开关：布局设置 → 菜单栏设置 → 语言切换；
            面板仅列三种手动语言，默认语言由「样式设置 → 主题语言」配置 -->
       <span
