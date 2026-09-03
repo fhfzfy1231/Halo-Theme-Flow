@@ -1,17 +1,17 @@
 apiVersion: theme.halo.run/v1alpha1
 kind: Theme
 metadata:
-  name: Ethereal
+  name: Flow
 spec:
-  displayName: Ethereal
+  displayName: Flow
   author:
-    name: 楠南NanNan
-    website: https://www.nannax.top
-  description: 一款基于 Fuwari 二次开发，为 Halo 打造的 Fuwari 风格增强型主题。
-  logo: /themes/Ethereal/assets/images/favicon-light-192.png
-  homepage: https://github.com/AloneNanNan/halo-theme-ethereal#readme
-  repo: https://github.com/AloneNanNan/halo-theme-ethereal
-  issues: https://github.com/AloneNanNan/halo-theme-ethereal/issues
+    name: Akagi_Zen
+    website: https://github.com/fhfzfy1231
+  description: 一款基于 Ethereal 二次开发的个人使用主题。
+  logo: /themes/Flow/assets/images/favicon-light-192.png
+  homepage: https://github.com/fhfzfy1231/Halo-Theme-Ethereal#readme
+  repo: https://github.com/fhfzfy1231/Halo-Theme-Ethereal
+  issues: https://github.com/fhfzfy1231/Halo-Theme-Ethereal/issues
   customTemplates:
     page:
       - name: "朋友圈"
@@ -26,10 +26,10 @@ spec:
       - name: "技能"
         description: "个人技能展示页面（在主题设置的「技能」Tab 中配置数据）"
         file: "skills.html"
-  settingName: "Ethereal-setting"
-  configMapName: "Ethereal-configMap"
-  version: "1.2.0"
+  settingName: "Flow-setting"
+  configMapName: "Flow-configMap"
+  version: "1.2.1"
   requires: ">=2.25.0"
   license:
     - name: "MIT"
-      url: "https://github.com/AloneNanNan/halo-theme-ethereal/blob/main/LICENSE"
+      url: "https://github.com/fhfzfy1231/Halo-Theme-Ethereal/blob/main/LICENSE"
