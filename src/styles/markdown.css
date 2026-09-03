@@ -9,6 +9,12 @@
   scroll-margin-top: 6rem;
 }
 
+/* 与 Halo 编辑器预览保持一致：一级、二级标题下方显示分割线。 */
+.custom-md :is(h1, h2) {
+  padding-bottom: 0.45em;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+}
+
 .custom-md {
   --tw-prose-links: var(--primary);
   --tw-prose-invert-links: var(--primary);
