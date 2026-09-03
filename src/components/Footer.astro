@@ -97,7 +97,7 @@ const currentYear = new Date().getFullYear();
       target="_blank"
     >
       <img
-        src={`/themes/Ethereal/assets/images/ghs.png?v=${ASSET_VERSION}`}
+        src={`/themes/Flow/assets/images/ghs.png?v=${ASSET_VERSION}`}
         alt="公安备案图标"
         loading="lazy"
         decoding="async"
@@ -109,21 +109,5 @@ const currentYear = new Date().getFullYear();
         class="text-sm"
         th:text="${theme.config?.footer?.beian?.gongan_text}"></span>
     </a>
-  </div>
-  <div
-    th:if="${theme.config?.footer?.displayLinks?.enable_theme_credit == null || theme.config?.footer?.displayLinks?.enable_theme_credit}"
-    class="mt-2"
-  >
-    <span th:text="#{footer.poweredBy}">Powered by</span>{" "}
-    <a
-      class="link font-medium text-(--primary)"
-      target="_blank"
-      href="https://www.halo.run">Halo</a
-    >{" "}&{" "}
-    <a
-      class="link font-medium text-(--primary)"
-      target="_blank"
-      href="https://github.com/AloneNanNan/halo-theme-ethereal">Ethereal</a
-    >
   </div>
 </footer>
