@@ -71,7 +71,7 @@ const buildAssets = {
 let publicAssetJs = [];
 
 export default defineConfig({
-  base: "/themes/Ethereal",
+  base: "/themes/Flow",
   build: {
     assets: "assets",
     format: "file",
