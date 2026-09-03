@@ -18,7 +18,7 @@ import { imageSuffixThWith } from "../../utils/image-suffix";
       ></span>
     </div>
     <ImageWrapper
-      src="${(theme.config?.sidebar?.profile?.avatar ?: '/themes/Ethereal/assets/images/demo-avatar.png') + suffix}"
+      src="${(theme.config?.sidebar?.profile?.avatar ?: '/themes/Flow/assets/images/demo-avatar.png') + suffix}"
       alt="${theme.config?.sidebar?.profile?.name ?: 'Profile'}"
       class="mx-auto aspect-square h-full lg:mt-0 lg:w-full"
     />
@@ -29,9 +29,9 @@ import { imageSuffixThWith } from "../../utils/image-suffix";
       <span style="position: relative; display: inline-block;">
         <span
           class="text-xl font-bold text-black/90 transition dark:text-neutral-50"
-          th:text="${theme.config?.sidebar?.profile?.name ?: 'NanNan'}"
+          th:text="${theme.config?.sidebar?.profile?.name ?: 'Akagi_Zen'}"
         >
-          NanNan
+          Akagi_Zen
         </span>
         <!-- 在线状态图标（昵称右侧，不参与居中布局）：点击切换由 profile-status.ts 处理。
              注意：th:text 会替换元素内部全部子元素，因此本徽标必须与昵称 span 平级，
