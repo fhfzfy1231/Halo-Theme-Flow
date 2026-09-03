@@ -4,7 +4,7 @@
   </sub>
 </p>
 
-<h1 align="center">Halo-Theme-Ethereal</h1>
+<h1 align="center">Flow</h1>
 
 <p align="center">
   一款基于 <a href="https://github.com/jiewenhuang/halo-theme-fuwari">halo-theme-fuwari</a> 二次开发<br>
@@ -44,7 +44,7 @@
 
 ## 介绍
 
-**Ethereal** 是一款为 [Halo 2](https://github.com/halo-dev/halo) 打造的 Fuwari 风格博客主题。它基于 [halo-theme-fuwari](https://github.com/jiewenhuang/halo-theme-fuwari)（原版 [Fuwari](https://github.com/saicaca/fuwari) 的 Halo 移植版）深度二次开发，并融合了 [Firefly](https://github.com/CuteLeaf/Firefly) 的清新美学与多种现代 UI 趋势，感谢原作与 Firefly 的开源贡献。
+**Flow** 是一款基于 Ethereal 二次开发的个人使用 Halo 主题。
 
 在保留原版清爽调性的基础上，Ethereal 新增了大量功能与视觉改进：三栏/两栏自由布局、磨砂玻璃质感、Banner 多形态展示、丰富的侧边栏小组件、图片 CDN 实时压缩、访客前台实时换肤等，力求为 Halo 用户提供一个开箱即用的 Fuwari 风格功能增强型主题。主题使用 AI 辅助开发。
 
