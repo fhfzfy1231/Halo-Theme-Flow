@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: Setting
 metadata:
-  name: Ethereal-setting
+  name: Flow-setting
 spec:
   forms:
     - group: layout
@@ -383,7 +383,7 @@ spec:
           label: Banner 样式
           value:
             mode: single
-            src: "/themes/Ethereal/assets/images/demo-banner.png"
+            src: "/themes/Flow/assets/images/demo-banner.png"
             carousel:
               images: []
               effect: fade
@@ -413,7 +413,7 @@ spec:
               key: banner_src
               if: "$get(banner_mode).value === 'single'"
               label: 图片/视频
-              value: "/themes/Ethereal/assets/images/demo-banner.png"
+              value: "/themes/Flow/assets/images/demo-banner.png"
               accepts:
                 - "image/*"
                 - "video/mp4"
@@ -957,7 +957,7 @@ spec:
                   if: "$value.value === 'hitokoto'"
                   name: fallback_source
                   label: 获取失败来源
-                  value: "楠南NanNan"
+                  value: "Akagi_Zen"
                   help: "一言获取失败时显示的作者或来源"
                 - $formkit: text
                   if: "$value.value === 'music'"
@@ -1101,7 +1101,7 @@ spec:
                   if: "$value.value === 'hitokoto'"
                   name: fallback_source
                   label: 获取失败来源
-                  value: "楠南NanNan"
+                  value: "Akagi_Zen"
                   help: "一言获取失败时显示的作者或来源"
                 - $formkit: number
                   if: "$value.value === 'schedule'"
@@ -1143,13 +1143,13 @@ spec:
             - $formkit: attachment
               name: avatar
               if: "$get(enable_profile_switch).value"
-              value: /themes/Ethereal/assets/images/demo-avatar.png
+              value: /themes/Flow/assets/images/demo-avatar.png
               label: 头像
             - $formkit: text
               name: name
               if: "$get(enable_profile_switch).value"
               label: 昵称
-              value: NanNan
+              value: Akagi_Zen
             - $formkit: text
               name: bio
               if: "$get(enable_profile_switch).value"
@@ -1813,11 +1813,6 @@ spec:
               value: true
               label: 显示 Sitemap
               help: "在页脚显示 Sitemap 链接（需安装 Sitemap 插件）"
-            - $formkit: switch
-              name: enable_theme_credit
-              value: true
-              label: 显示主题署名
-              help: "开启后在页脚显示「Powered by Halo & Ethereal」标识，让访客了解您所使用的主题。希望您能保持开启以示支持，这将帮助作者更有动力持续维护与更新本主题。"
         - $formkit: group
           name: customLinks
           label: 自定义链接
