@@ -9,9 +9,9 @@ spec:
     website: https://github.com/fhfzfy1231
   description: 一款基于 Ethereal 二次开发的个人使用主题。
   logo: /themes/Flow/assets/images/favicon-light-192.png
-  homepage: https://github.com/fhfzfy1231/Halo-Theme-Ethereal#readme
-  repo: https://github.com/fhfzfy1231/Halo-Theme-Ethereal
-  issues: https://github.com/fhfzfy1231/Halo-Theme-Ethereal/issues
+  homepage: https://github.com/fhfzfy1231/Halo-Theme-Flow#readme
+  repo: https://github.com/fhfzfy1231/Halo-Theme-Flow
+  issues: https://github.com/fhfzfy1231/Halo-Theme-Flow/issues
   customTemplates:
     page:
       - name: "朋友圈"
@@ -28,8 +28,8 @@ spec:
         file: "skills.html"
   settingName: "Flow-setting"
   configMapName: "Flow-configMap"
-  version: "1.2.1"
+  version: "1.2.2"
   requires: ">=2.25.0"
   license:
     - name: "MIT"
-      url: "https://github.com/fhfzfy1231/Halo-Theme-Ethereal/blob/main/LICENSE"
+      url: "https://github.com/fhfzfy1231/Halo-Theme-Flow/blob/main/LICENSE"
